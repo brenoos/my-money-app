@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default props => (
+const Footer = props => (
     <footer className='main-footer'>
         <strong>
             Copyright &copy; 2018
@@ -8,3 +8,4 @@ export default props => (
         </strong>
     </footer>
 )
+export default Footer
