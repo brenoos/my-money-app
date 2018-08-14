@@ -6,8 +6,9 @@ import { selectTab } from './tabActions'
 
 class TabHeader extends Component {
     render(){
-        let selected = this.props.tab.selected === this.props.target
-        const { selectTab, target, icon, label } = this.props
+        const { selectTab, target, icon, label, tab } = this.props
+        let selected = tab.selected === target
+        
         return(
             <li className={selected ? 'active' : ''}>
                 <a href='javascript:;'
