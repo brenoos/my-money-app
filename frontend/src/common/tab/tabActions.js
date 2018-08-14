@@ -4,3 +4,12 @@ export const selectTab = tabId => {
         payload: tabId
     }
 }
+
+export const showTabs = (...tabIds) => {
+    const tabsToShow = {}
+    tabIds.forEach(e => tabsToShow[e] = true)
+    return{
+        type: 'TAB_SHOWED',
+        payload: tabsToShow
+    }
+}
