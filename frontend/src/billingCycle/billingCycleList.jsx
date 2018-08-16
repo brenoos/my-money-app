@@ -5,6 +5,11 @@ import { connect } from 'react-redux'
 import { getList } from './billingCycleActions'
 
 class BillingCycleList extends Component {
+
+    componentWillMount() {
+        this.props.getList()
+    }
+    
     render(){
         return(
             <div>
