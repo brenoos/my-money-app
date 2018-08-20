@@ -4,5 +4,9 @@
     width: 100%;
 }
 button {
-    margin-right: 4px;
+    margin-left: 5px;
+}
+
+.table-actions {
+    width: 150px;
 }
