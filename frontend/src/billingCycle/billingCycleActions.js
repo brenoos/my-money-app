@@ -19,8 +19,12 @@ export const create = values => {
     return submit(values, 'post')
 }
 
-export const update = values =>{
+export const update = values => {
     return submit(values, 'put')
+}
+
+export const remove = values => {
+    return(submit(values, 'delete'))
 }
 
 const submit = (values, method) => {
@@ -41,6 +45,15 @@ export const showUpdate = billingCycle => {
     return [
         showTabs('tabUpdate'),
         selectTab('tabUpdate'),
+        initialize('billingCycleForm', billingCycle)
+    ]
+}
+
+//TODO: REFATORAR ESSE METODO
+export const showDelete = billingCycle => {
+    return [
+        showTabs('tabDelete'),
+        selectTab('tabDelete'),
         initialize('billingCycleForm', billingCycle)
     ]
 }
