@@ -27,7 +27,7 @@ class Auth extends Component {
         const { loginMode } = this.state
         const { handleSubmit } = this.props
         return (
-
+            <h1>ola</h1>
         )
     }
 }
