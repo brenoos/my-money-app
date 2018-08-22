@@ -19,7 +19,6 @@ class BillingCycleForm extends Component{
     }
 
     render(){
-
         const { handleSubmit, readOnly, credits, debts } = this.props
         const { sumOfCredits, sumOfDebts } = this.calculateSummary()
 
